@@ -62,14 +62,22 @@ radio.forEach((e)=>{
 
     const taskRow = document.querySelectorAll('.finish');
     const taskDis = document.querySelectorAll('.tasks');
+    const taskFin = document.querySelectorAll('.tasks finish');
     
     console.log(taskRow)
-    taskRow.forEach((r)=>{
+    taskFin.forEach((r)=>{
       r.style.display = 'none';
     })
     taskDis.forEach((r)=>{
       r.style.display = 'block';
     })
+    taskRow.forEach((r)=>{
+
+      r.style.display = 'none';
+    })
+
+    
+    
 
   } else if (radio[2].checked) {
     const taskRow = document.querySelectorAll('.tasks');
